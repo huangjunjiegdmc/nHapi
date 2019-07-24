@@ -19,7 +19,13 @@ public class IS: NHapi.Base.Model.Primitive.IS
 			    }
 		    }
             
-
+/// <summary>
+	  /// Construct the type
+	  /// </summary>
+	  /// <param name="theMessage"></param>
+	  /// <param name="description"></param>
+	  public IS(IMessage theMessage, string description) : base(theMessage, description)
+	  { }
 
                 ///<summary>Construct the type
                 ///<param name="theMessage">message to which this Type belongs</param>
@@ -37,4 +43,5 @@ public class IS: NHapi.Base.Model.Primitive.IS
                 ///</summary>
 		        public IS(IMessage message, int theTable, string description) : base(message,theTable, description)
     	        {}
-                }}
+                }
+}
